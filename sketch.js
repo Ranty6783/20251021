@@ -50,6 +50,17 @@ function draw() {
     randomSeed(rnum);
     tile();
 
+    // ====== 顯示中央標題 ======
+    push();
+    textAlign(CENTER, CENTER);
+    textSize(96); // 字體大小大兩倍
+    stroke(0, 180);      // 黑色陰影
+    strokeWeight(8);
+    fill(255);           // 白色字
+    text("彭禹軒\n414730852", width / 2, height / 2);
+    pop();
+    // =========================
+
     // 顯示選單（滑鼠靠近左上方時）
     if (mouseX < 120 && mouseY < 120) {
         showMenu();
